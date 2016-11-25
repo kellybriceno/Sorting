@@ -5,7 +5,7 @@ public class MainSort {
  public static void main(String[] args) {
   //created linked list 
   System.out.println("Linked List");
-  LinkedList list = new LinkedList();
+  LinkedListSort list = new LinkedListSort();
   //adding items to linked list
   list.add(1);
   list.add(2);
@@ -18,6 +18,8 @@ public class MainSort {
   list.remove(3);
   //calling print method
   list.print();
+  
+  list.bubbleS(); 
  
 
   
@@ -27,3 +29,4 @@ public class MainSort {
   
   
  }
+}

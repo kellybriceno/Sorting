@@ -133,7 +133,7 @@ public class LinkedListSort {
  }
  
  // Default constructor
- public LinkedList() {
+ public LinkedListSort() {
   head = null;
  }
 
@@ -143,4 +143,21 @@ public class LinkedListSort {
          temp,
          head,
          current;
+  
+ public void bubbleS() {
+   node border = null; // first node in sprted part
+   while (border != head) {
+     node current = head;
+     while (current.next != border) {
+       if (current.element > current.next.element) {
+      
+         current.element = current.next.element;
+         current.next.element = v;
+       }
+       current = current.next;
+     }
+     border = current;
+   }
+ }
+
 }
